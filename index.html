@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+  <script src="request.js" defer></script>
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<h1>What's the Weather</h1>
+<div class="container my-5">
+    <hi class="text-center title">Weather in </hi>
+    <form class="seach-location">
+        <input type="text" name="city" placeholder="What City?" autocomplete="off" class="form-control text-muted form-rounded p-4 shadow-sm">
+    </form>
+
+    <div class="card rounded my-3 shadow-lg back-card">
+        <div class="card-top text-center">
+            <div class="city-name my-3">
+                <p>Baltimore</p>
+                <span>...</span>
+            </div>
+            <img class="card-img-top time" src="img/moon.avif" alt="">
+        </div>
+
+
+        <div class="card-body">
+            <div class="card-mid row">
+                <div class="col-8 text-center temp">
+                    <span>30&deg;C</span>
+                </div>
+                <div class="col-4 condition-temp">
+                    <p class="condition">Thunder Storm</p>
+                    <p class="high">30&deg;C</p>
+                    <p class="low">27&deg;C</p>
+                </div>
+              
+            </div>
+
+            <div class="icon-container card shadow mx-auto">
+                <img class="cloudpic" src="img/cloud.png" alt="">
+            </div>
+            <div class="card-bottom px-5 py-4 row">
+                <div class="col text-center">
+                    <p>30&deg;C</p>
+                    <span>Feels Like</span>
+                </div>
+                <div class="col text-center">
+                    <p>55%</p>
+                    <span>Humidity</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
